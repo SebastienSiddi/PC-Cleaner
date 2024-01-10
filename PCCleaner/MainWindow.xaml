@@ -1,0 +1,50 @@
+﻿<Window x:Class="PCCleaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PCCleaner"
+        mc:Ignorable="d"
+        x:Name="window"
+        Title="PC Cleaner" Height="700" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/ico.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="265*"/>
+            <RowDefinition Height="77*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="92*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="175" Stroke="Black" VerticalAlignment="Top" Width="1000" Fill="#FF007791" StrokeThickness="0"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="10" Stroke="Black" VerticalAlignment="Top" Width="1000" Fill="#FFDEDEDE" Margin="0,175,0,0" StrokeThickness="0"/>
+
+        <!-- Titre -->
+        <Label x:Name="title" Content="Analyse du PC nécessaire" HorizontalAlignment="Left" Height="68" Margin="57,15,0,0" VerticalAlignment="Top" Width="725" Grid.ColumnSpan="2" Foreground="White" FontFamily="Leelawadee UI" FontSize="40" FontWeight="Bold"/>
+        <!-- Sous-Titre -->
+        <Label Content="Espace à nettoyer :" HorizontalAlignment="Left" Height="40" Margin="57,85,0,0" VerticalAlignment="Top" Width="219" Grid.ColumnSpan="2" Foreground="White" FontFamily="Leelawadee UI" FontSize="22" FontWeight="Bold"/>
+        <Label Content="Dernière analyse   :" HorizontalAlignment="Left" Height="40" Margin="57,117,0,0" VerticalAlignment="Top" Width="219" Grid.ColumnSpan="2" Foreground="White" FontFamily="Leelawadee UI" FontSize="22" FontWeight="Bold"/>
+        <!-- Valeurs -->
+        <Label x:Name="date" Content="Jamais" HorizontalAlignment="Left" Height="40" Margin="17,117,0,0" VerticalAlignment="Top" Width="219" Foreground="White" FontFamily="Leelawadee UI Semilight" FontSize="22" Grid.Column="1"/>
+        <Label x:Name="size" Content="??? Mb" HorizontalAlignment="Left" Height="40" Margin="17,85,0,0" VerticalAlignment="Top" Width="219" Foreground="White" FontFamily="Leelawadee UI Semilight" FontSize="22" Grid.Column="1"/>
+        <Button Grid.Column="1" Content="ANALYSER" HorizontalAlignment="Left" Margin="402,48,0,0" VerticalAlignment="Top" Width="300" Height="80" Background="#FF007791" BorderThickness="5,5,5,5" ClipToBounds="True" BorderBrush="White" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="26" Click="Button_Analyser_Click"/>
+
+        <!-- Content -->
+        <Button x:Name="btnClean" Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="65,202,0,0" VerticalAlignment="Top" Width="400" Height="180" Background="#FF007791" BorderThickness="5,5,5,5" ClipToBounds="True" BorderBrush="White" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="26" Grid.ColumnSpan="2" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True" UseLayoutRounding="False" Click="Button_Nettoyer_Click"/>
+        <Button Content="&#xD;&#xA;MISE A JOUR" HorizontalAlignment="Left" Margin="65,395,0,0" VerticalAlignment="Top" Width="400" Height="180" Background="#FF007791" BorderThickness="5,5,5,5" ClipToBounds="True" BorderBrush="White" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="26" Grid.ColumnSpan="2" Grid.RowSpan="2" Click="Button_MAJ_Click"/>
+        <Button Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="266,202,0,0" VerticalAlignment="Top" Width="400" Height="180" Background="#FF007791" BorderThickness="5,5,5,5" ClipToBounds="True" BorderBrush="White" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="26" Grid.Column="1" Click="Button_Histo_Click"/>
+        <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="266,395,0,0" VerticalAlignment="Top" Width="400" Height="180" Background="#FF007791" BorderThickness="5,5,5,5" ClipToBounds="True" BorderBrush="White" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="26" Grid.Column="1" Grid.RowSpan="2" Click="Button_Web_Click"/>
+        <Image Height="50" Width="50" Source="/icons8-balayer-100.png" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="240,229,0,0"/>
+        <Image Height="50" Width="50" Source="/icons8-passé-64.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="441,229,0,0" Grid.Column="1"/>
+        <Image Height="50" Width="50" Source="/icons8-mises-à-jour-disponibles-100.png" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="240,423,0,0"/>
+        <Image Height="50" Width="50" Source="/icons8-domaine-64.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="441,423,0,0" Grid.Column="1"/>
+
+        <!-- Footer -->
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="90" Stroke="Black" VerticalAlignment="Top" Width="1000" Fill="#FFDEDEDE" Margin="0,64,0,0" StrokeThickness="0" Grid.Row="1"/>
+        <Label Content="Copyright 2024 - Sébastien Siddi" HorizontalAlignment="Left" Height="40" Margin="35,69,0,0" VerticalAlignment="Top" Width="931" Foreground="Black" FontFamily="Leelawadee UI" FontSize="22" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" Grid.Row="1"/>
+
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="40" Stroke="Black" VerticalAlignment="Top" Width="1000" Fill="#FEE09797" Margin="0,114,0,0" StrokeThickness="0" Visibility="Hidden" Grid.Row="1"/>
+        <Label x:Name="news" Content="Copyright 2024 - Sébastien Siddi" HorizontalAlignment="Left" Height="40" Margin="35,114,0,0" VerticalAlignment="Top" Width="931" Foreground="Black" FontFamily="Leelawadee UI" FontSize="22" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" Visibility="Hidden" Grid.Row="1"/>
+
+    </Grid>
+</Window>
