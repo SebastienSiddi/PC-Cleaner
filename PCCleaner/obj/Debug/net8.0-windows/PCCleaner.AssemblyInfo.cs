@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PCCleaner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71c8398748af2bd5035a59c3ef8a36d71d841acd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd2545268cede57b1ec5a9eed4fa726d7e64fc7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PCCleaner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PCCleaner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

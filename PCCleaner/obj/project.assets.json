@@ -8,23 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\s1e3b\\.nuget\\packages\\": {},
+    "C:\\Users\\sebas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s1e3b\\Source\\Repos\\SebastienSiddi\\PC-Cleaner\\PCCleaner\\PCCleaner.csproj",
+      "projectUniqueName": "C:\\Users\\sebas\\Workspace\\SebastienSiddi\\PC-Cleaner\\PCCleaner\\PCCleaner.csproj",
       "projectName": "PCCleaner",
-      "projectPath": "C:\\Users\\s1e3b\\Source\\Repos\\SebastienSiddi\\PC-Cleaner\\PCCleaner\\PCCleaner.csproj",
-      "packagesPath": "C:\\Users\\s1e3b\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s1e3b\\Source\\Repos\\SebastienSiddi\\PC-Cleaner\\PCCleaner\\obj\\",
+      "projectPath": "C:\\Users\\sebas\\Workspace\\SebastienSiddi\\PC-Cleaner\\PCCleaner\\PCCleaner.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebas\\Workspace\\SebastienSiddi\\PC-Cleaner\\PCCleaner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\s1e3b\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -70,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
